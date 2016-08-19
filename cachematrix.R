@@ -4,6 +4,7 @@
 ## Write a short comment describing this function
 
 makeCacheMatrix <- function(x = matrix()) {
+#This function stores initial matrix, then check if there is an inverse define. If none, shows error. 
   m <- NULL
   set <- function(y) {
     x <<- y
@@ -21,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+        ## Return a matrix that is the inverse of x. If there is a inverse defined already, then output prompts "getting cached data".
   m <- x$getInverse()
   if (!is.null(m)) {
     message("getting cached data")
